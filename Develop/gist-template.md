@@ -26,9 +26,13 @@ this expression is a sequence of characters usually used to search for a string 
 ## Regex Components
 
 ### Anchors
-
-
+For regex expressions used to match an email, the anchors used are '^', 
+which means that the  beginning and ending of the string. Since 'multiline' isn't enabled, this regex
+ends at '$'
 ### Quantifiers
+
+
+
 
 ### OR Operator
 
