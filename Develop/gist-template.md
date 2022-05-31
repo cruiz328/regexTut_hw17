@@ -42,7 +42,8 @@ The third half of the regex expression is ' (?:\.[a-zA-Z0-9-]+)*$/ ' or the '.co
 the bracket expression for the validation of the email uses the code portion ' /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+ ' this matches the 'whole alphabet/[a-z](case sensitive)', can match digits '[0=9]' and also the characters '[.!#$%&’*+/=?^_`{|}~-]'
 
 ### Greedy and Lazy Match
-
+Because this regex uses the '[+]'quantifier, this will match as many times as it is possible to match.
+Also, this regex use '[{0-9}]', which will match the last group.
 
 This regrex includes greedy matches. Since it includes the + Quantifier, it will match as many times as possible giving back as needed. Another greedy Quantifier used in this regex is {} when matching `{2,6} for the last capture group.
 
