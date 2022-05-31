@@ -30,9 +30,7 @@ For regex expressions used to match an email, the anchors used are '^',
 which means that the  beginning and ending of the string. Since 'multiline' isn't enabled, this regex
 ends at '$'
 ### Quantifiers
-
-
-
+Quantifiers include the '+' sign, which connects the users email name along with the users email service name, also using the '.com' in said regex. '{a-z/d/-}' are other quantifiers that say that the 'whole alphabet' is able to be used and also that all 'digits' can be used and 'hyphons' can be used as well.
 
 ### OR Operator
 
