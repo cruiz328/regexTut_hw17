@@ -30,15 +30,20 @@ For regex expressions used to match an email, the anchors used are '^',
 which means that the  beginning and ending of the string. Since 'multiline' isn't enabled, this regex
 ends at '$'
 ### Quantifiers
-Quantifiers include the '+' sign, which connects the users email name along with the users email service name, also using the '.com' in said regex. '{a-z/d/-}' are other quantifiers that say that the 'whole alphabet' is able to be used and also that all 'digits' can be used and 'hyphons' can be used as well.
+Quantifiers include the '+' sign, which connects the users email name along with the users email service name, also using the '.com' in said regex. '{a-z}' are other quantifiers that say that the 'whole alphabet' is able to be used.
+
 
 ### OR Operator
-
+N/A
 ### Character Classes
+'{/d}' is used to say that numbers/digits '0-9' or 'all of the digits used as a single/lone digit' are able to be used in said regex. '22' won't be read, but '2' will be. 
 
 ### Flags
-
+N/A
 ### Grouping and Capturing
+In the regex expression show above in the example used in the [Summary](#summary) ' /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+ ', this is used to match the user email or the 'useremail("username")'  of an email. 
+The second half of the regex code, ' @[a-zA-Z0-9-]+ ' or the '@usermail' is used to match the service provider for the users email address. 
+The third half of the regex expression is ' (?:\.[a-zA-Z0-9-]+)*$/ ' or the '.com' portion and this simply caputers the .com of the email address.
 
 ### Bracket Expressions
 
